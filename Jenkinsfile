@@ -13,9 +13,9 @@ pipeline {
 		
 			steps {
 			
-			sh''' //yum install httpd -y
+			sh''' yum install httpd -y
 				  service httpd start 
-				 // chkconfig httpd on 
+				  chkconfig httpd on 
 				  cp index.html /var/www/html/
 				  chmod -R 777 /var/*
 				  service httpd restart'''
