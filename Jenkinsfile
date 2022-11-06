@@ -18,7 +18,7 @@ pipeline {
 				  chkconfig httpd on 
 				  cp index.html /var/www/html/
 				  chmod -R 777 /var/*
-				  service httpd restart
+				  service httpd restart'''
 			}
 			
 			
